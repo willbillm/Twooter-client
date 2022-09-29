@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { api } from '../../axios';
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -10,7 +10,7 @@ import Stack from '@mui/material/Stack';
 export default function CreateP() {
 
 const createPost = () => {
-  axios.post('http://localhost:5000/posts', post).then( () => {
+  api.post('/posts', post).then( () => {
     window.location.reload(false);
   })
 }
@@ -21,7 +21,7 @@ const handleChange = (e) => {
 }
 
 useEffect(() => {
-  axios.get('http://localhost:5000/users').then( (allUsers) => {
+  api.get('/users').then( (allUsers) => {
     setUserList(allUsers.data)
   })
 }, [])

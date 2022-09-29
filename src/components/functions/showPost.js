@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { api } from '../../axios';
 
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
@@ -20,7 +20,7 @@ import Paper from '@mui/material/Paper';
 export default function ShowP() {   
     
 useEffect(() => {
-    axios.get('http://localhost:5000/posts').then( (allPosts) => {
+    api.get('/posts').then( (allPosts) => {
     setPostList(allPosts.data)
     })
 }, [])

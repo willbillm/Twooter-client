@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import { api } from '../../axios';
 
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
@@ -17,7 +17,7 @@ const [user, setUser] = useState({
 });
 
 const createUser = () => {
-  axios.post('http://localhost:5000/users', user).then( () => {
+  api.post('/users', user).then( () => {
     window.location.reload(false);
   })
 }
