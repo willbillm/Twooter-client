@@ -6,6 +6,8 @@ run the command 'npm start' in the terminal.
 
 If running npm start does not open your browser and go to the site automatically, in your browser enter the url: 'localhost:3000'.
 
+Running the app should automatically connect the server to heroku.
+
 Using the app:
 
 There are three pages to navigate between: Create user, create post, and view posts. Navigate between the pages by clicking the links near the top.
