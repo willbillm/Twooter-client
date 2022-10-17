@@ -38,11 +38,16 @@ const [userList, setUserList] = useState([])
 
 return (
 <>  
-  <select value={post.user} onChange={handleChange}>
-    {userList.map((users) => (
-      <option value={users.userName}>{users.userName}</option>
-    ))}
-  </select>
+  <Stack direction='row' spacing={2}>
+    <h4>Select User:</h4>
+    <h1>
+      <select value={post.user} onChange={handleChange}>
+        {userList.map((users) => (
+          <option value={users.userName}>{users.userName}</option>
+        ))}
+      </select>
+    </h1>
+  </Stack>
 
 
   <Box
