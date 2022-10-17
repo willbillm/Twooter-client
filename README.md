@@ -1,10 +1,8 @@
 Getting started:
 
-In both the client and server directory,
+In the client directory,
 
 run the command 'npm start' in the terminal.
-
-Both must be running in order for the app to work properly.
 
 If running npm start does not open your browser and go to the site automatically, in your browser enter the url: 'localhost:3000'.
 
