@@ -1,12 +1,4 @@
-Getting started:
-
-In the client directory,
-
-run the command 'npm start' in the terminal.
-
-If running npm start does not open your browser and go to the site automatically, in your browser enter the url: 'localhost:3000'.
-
-Running the app should automatically connect the server to heroku.
+This site is online at 'https://twooter.netlify.app'. 
 
 Using the app:
 
